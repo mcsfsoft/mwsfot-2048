@@ -1,0 +1,32 @@
+server:
+  port: 19012
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 5000
+    database: 0
+  messages:
+    encoding: UTF-8
+#socket.io 配置
+mwsfot:
+  socketIO:
+    host: 127.0.0.1
+    port: 19013
+    # 设置最大每帧处理数据的长度, 防止攻击
+    maxFramePayloadLength: 1048576
+    # 设置http最大内容深度
+    maxHttpContentLength: 1048576
+    # socket连接数大小
+    bossCount: 1
+    workCount: 100
+    allowCustomRequests: true
+    #升级超时时间 ms 10
+    upgradeTimeout: 100000
+    #超时时间 ms 60
+    pingTimeout: 600000
+    #单位ms 间隔
+    pingInterval: 25000
+    #命名空间
+    namespaces: /game2048
