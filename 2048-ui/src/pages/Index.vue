@@ -27,12 +27,24 @@
             <div class="pop-up" v-show="showAbout" key="fade2">
                 <div class="pop-wrap show-about-wrap">
                     <div class="text-wrap">
-                        <p class="about-title">members：</p>
+                        <p class="about-title">开发人员：</p>
                         <p class="about-content">{{member}}</p>
 <!--                        <p class="about-title">职责：</p>
                         <template v-for="item of memberInfo">
                             <p class="about-content" :key="item.member">{{item.member}}: {{item.info}}</p>
                         </template>-->
+                      <p class="about-title">单人游戏模式</p>
+                      <p class="about-content">模式介绍：</p>
+                      <p class="about-content">（1）经典模式：2 + 2 = 4， 4 + 4 = 8...合成2048即可获胜！小心不要无路可走哦。</p>
+                      <p class="about-content">（2）限时模式：在经典模式的背景下加入了计时器，争分夺秒的合成方块吧！</p>
+                      <p class="about-content">（3）速度模式：更加紧张刺激的模式，别犹豫！再不活动棋盘就要立刻Game Over了哦~</p>
+                      <p class="about-content">（在单人模式中还有彩蛋哦，你发现了吗？）</p>
+                      <p class="about-title">双人模式</p>
+                      <p class="about-content">在多人模式中，每一个房间只能容纳两位玩家,且房间与房间之间的通信是分开的</p>
+                      <p class="about-content">你可以自由设定游戏难度（简单/中等/困难）以及游戏时间（X分钟），并等待你的对手加入房间。当两人都在房间时房主可以开始游戏，在PK中你可以看到自己和对手的实时分数，并在游戏结束时根据分数结算胜负关系。</p>
+                      <p class="about-content">我们还开发了聊天功能，里面还有表情包可以用哦，在游戏的过程中也别忘了和小伙伴愉快交流~</p>
+                      <p>
+                      </p>
                     </div>
                     <button class="about-btn" @click="() => showAbout = false">返回</button>
                 </div>
