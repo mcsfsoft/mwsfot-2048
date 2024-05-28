@@ -27,15 +27,12 @@
             <div class="pop-up" v-show="showAbout" key="fade2">
                 <div class="pop-wrap show-about-wrap">
                     <div class="text-wrap">
-                      <p class="about-title">⭕项目目前已经停止维护</p>
-                      <a  class="about-title" href="https://github.com/franktans/2048online">原GitHub</a>
-                      <a  class="about-title" href="https://github.com/franktans/2048online">原GitHub</a>
-                        <p class="about-title">制作组名单：</p>
+                        <p class="about-title">members：</p>
                         <p class="about-content">{{member}}</p>
-                        <p class="about-title">职责：</p>
+<!--                        <p class="about-title">职责：</p>
                         <template v-for="item of memberInfo">
                             <p class="about-content" :key="item.member">{{item.member}}: {{item.info}}</p>
-                        </template>
+                        </template>-->
                     </div>
                     <button class="about-btn" @click="() => showAbout = false">返回</button>
                 </div>
@@ -54,7 +51,7 @@ export default {
             roomId: '',
             dialog: false,
             showAbout: false,
-            member: '谭wy、张kx、赵wh、黄jl、mc',
+            member: '谭wy、张kx、赵wh、黄jl、mwsfot',
             memberInfo: [
                 {
                     member: '⭕谭wy',
@@ -247,7 +244,7 @@ $content-width: 40vw;
 
         .about-title {
             border-bottom: 1px solid #efdbaa;
-            padding: 5px;
+            padding: 1px;
             margin-bottom: 10px;
         }
         .about-content {
